@@ -1,0 +1,177 @@
+* PROFESSIONAL EXPERIENCE */
+    .experience-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .experience-item {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      margin-bottom: 1.5rem;
+      background: var(--white);
+      box-shadow: 0 3px 10px rgba(0, 67, 135, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .experience-item:hover {
+      box-shadow: 0 8px 16px rgba(0, 67, 135, 0.15);
+    }
+    .experience-item h3 {
+      margin: 0 0 0.25rem 0;
+      color: var(--primary);
+      transition: color 0.3s ease;
+    }
+    .experience-item span {
+      font-style: italic;
+      color: #555;
+    }
+    .experience-item p {
+      margin-top: 0.5rem;
+      line-height: 1.5;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    /* AWARDS OR GRANTS */
+    .awards-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .award-item {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+      background: var(--white);
+      box-shadow: 0 3px 10px rgba(0, 67, 135, 0.1);
+      transition: box-shadow 0.3s ease;
+    }
+    .award-item:hover {
+      box-shadow: 0 8px 16px rgba(0, 67, 135, 0.15);
+    }
+    .award-item h3 {
+      margin-top: 0;
+      margin-bottom: 0.3rem;
+      color: var(--primary);
+      transition: color 0.3s ease;
+    }
+    .award-item p {
+      margin: 0.2rem 0 0;
+      color: #333;
+      transition: color 0.3s ease;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .testimonial-card {
+      border: 2px solid var(--primary);
+      border-radius: 8px;
+      background: var(--white);
+      padding: 1.5rem;
+      box-shadow: 0 3px 10px rgba(0, 67, 135, 0.1);
+      transition: box-shadow 0.3s ease;
+      font-style: italic;
+      color: #444;
+    }
+    .testimonial-card:hover {
+      box-shadow: 0 8px 16px rgba(0, 67, 135, 0.15);
+    }
+    .testimonial-card p {
+      margin-bottom: 1rem;
+    }
+    .testimonial-card cite {
+      display: block;
+      font-style: normal;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    /* BLOG */
+    .blog-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-top: 1rem;
+    }
+    .blog-item {
+      border-bottom: 1px solid var(--primary);
+      padding: 0.8rem 0;
+      transition: background-color 0.3s ease;
+    }
+    .blog-item:last-child {
+      border-bottom: none;
+    }
+    .blog-item a {
+      color: var(--primary);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .blog-item a:hover,
+    .blog-item a:focus {
+      text-decoration: underline;
+      outline: none;
+    }
+    .blog-item small {
+      display: block;
+      color: #555;
+      font-style: italic;
+      margin-top: 0.2rem;
+    }
+
+    /* Download CV button (header) */
+    #download-cv {
+      background: var(--accent);
+      color: var(--primary);
+      border: none;
+      padding: 0.5rem 1rem;
+      margin-left: 1rem;
+      border-radius: 6px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+    #download-cv:hover,
+    #download-cv:focus {
+      background: #e0b913;
+      outline: none;
+    }
+    body.dark #download-cv {
+      background: var(--accent-dark);
+      color: var(--primary-dark);
+    }
+    body.dark #download-cv:hover,
+    body.dark #download-cv:focus {
+      background: #f9a825;
+    }
+
+    /* Dark mode adjustments for new sections */
+    body.dark .experience-item,
+    body.dark .award-item,
+    body.dark .testimonial-card {
+      background: #1e1e1e;
+      border-color: var(--primary-dark);
+      box-shadow: 0 3px 10px rgba(144, 202, 249, 0.1);
+      color: var(--text-dark);
+    }
+    body.dark .experience-item:hover,
+    body.dark .award-item:hover,
+    body.dark .testimonial-card:hover {
+      box-shadow: 0 8px 16px rgba(144, 202, 249, 0.25);
+    }
+    body.dark .blog-item a {
+      color: var(--primary-dark);
+    }
+    body.dark .blog-item a:hover,
+    body.dark .blog-item a:focus {
+      color: var(--accent-dark);
+    }
